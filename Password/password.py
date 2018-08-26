@@ -1,9 +1,9 @@
 class Password:
          
 
-      password_list = [] 
+ password_list = [] 
 
-      def __init__(self,first_name,last_name,email,password):
+def __init__(self,first_name,last_name,email,password):
 
       
 
@@ -14,4 +14,6 @@ class Password:
 
 password_list = [] 
 def save_password(self):
-       Password.password_list.append(self)
+      
+
+        Password.password_list.append(self)
