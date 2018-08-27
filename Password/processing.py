@@ -63,7 +63,6 @@ while True:
                 print("password ...")
                 e_address = input()
 
-
                 save_password(create_password(first_name,last_name,email,password)) 
                 print ('\n')
                 print(f"New Password {first_name} {last_name} {email} created")
@@ -72,45 +71,46 @@ while True:
         elif short_code == 'dp':
 
                 if display_passwords():
-                    print("Here is a list of all your passwords")
+                    print("Here is a list of  your saved passwords")
                     print('\n')
                 
-            for password in display_passwords():
+                for password in display_passwords():
                     print(f"{password.first_name} {password.last_name}{password.email}")
                     print('\n')
                     
-            else:
+                else:
                     print('\n')
-                    print("You dont seem to have any passwords saved yet")
+                    print("You  have no passwords saved yet")
                     print('\n')
 
                                 
         elif short_code == 'fp':
 
-                print("Enter the number you want to search for")
+            print("Enter the email you want to search password for")
+
+            search_name = input()
+
+            if check_existing_password(search_name):
+
+                search_name = find_password(search_name)
+                print(f"{search_password.first_name} {search_password.last_name}")
+                print('-' * 20)
+
+                print(f"email{search_password.email}")
+                print(f"password{search_password.password}")
+            else:
+                        print("That password does not exist")
 
                 
-            search_number = input()
-
-            if check_existing_password(search_number):
-
-                    search_password = find_password(search_name)
-                    print(f"{search_password.first_name} {search_password.last_name}")
-                    print('-' * 20)
-
-                    print(f"email{search_password.email}")
-                    print(f"password{search_password.password}")
-            else:
-                    print("That password does not exist")
-
         elif short_code == "ex":
-                    print("thank you")
-                    break
-            else:
-                    print("I really didn't get that. Please use the short codes")
+                print("thank you")
+                break
+
+        else:
+                    print("Results not found. Please use the short codes")
 
 
     
     
-if__name__ == '__main__':
+if__name__ == '__main__'
 main() 

@@ -47,7 +47,7 @@ def test_save_multiple_password(self):
         # objects to our password_list
     
         self.new_password.save_password()
-        test_password = Password("Test","first_name","last_name","email","password") # new contact
+        test_password = Password("Test","first_name","last_name","email","password") # new 
         test_password.save_password()
         self.assertEqual(len(Password.password_list),2)
 
@@ -85,7 +85,7 @@ def display_password(clas):
         '''
         method that returns the contact list
         '''
-        return clas.password_list
+        return cls.password_list
 
 @classmethod
 def copy_email(clas,name):

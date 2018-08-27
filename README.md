@@ -1,7 +1,6 @@
 # PASSWORD-LOCKER
 #### passwordlocker is updated version, 24/08/2018
-ITS A SIMPLE OFFLINE APLICATION
-#### By **Duncan Arani**
+#### By Duncan Arani
 ## Description
 
 This script is for you if you forget your passwords frequently.
