@@ -60,34 +60,36 @@ def delete_pssword(self):
 
         #  Decorators allow you to make simple modifications to callable objects like functions, methods, or classes.
 
-@classmethod
-def find_by_emails(class,name):
-    
 
-        for password in class.password_list:
-            if password.emails == name:
-                return password
+
+@classmethod
+def find_by_emails(classes,name):
+    
+     
+     for password in classes.password_list:
+            if password.email == name:
+                return Password
 
 #  loops through all the saved password and checks if any matches the emails
 @classmethod
-def password_exist(class,name):
+def password_exist(classes,name):
         
-        for password in class.password_list:
-            if password.emails == name:
+        for password in classes.password_list:
+            if password.email == name:
                     return True
 
         return False  
 
 @classmethod
-def display_passwords(class):
+def display_password(class):
         '''
         method that returns the contact list
         '''
         return class.password_list
 
 @classmethod
-def copy_email(class,name):
-        password_found = Password.find_by_emails(name)
+def copy_email(clas,name):
+        password_found = Password.find_by_email(name)
         pyperclip.copy(password_found.email)
 
 if __name__ == '__main__':
