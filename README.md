@@ -1,5 +1,5 @@
-# PIG DICE
-#### pig dice is updated version, 20/07/2018
+# PASSWORD-LOCKER
+#### passwordlocker is updated version, 24/08/2018
 #### By **Duncan Arani**
 ## Description
 
