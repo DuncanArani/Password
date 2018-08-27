@@ -63,18 +63,18 @@ def delete_pssword(self):
 
 
 @classmethod
-def find_by_emails(classes,name):
+def find_by_emails(cls,name):
     
      
-     for password in classes.password_list:
+     for password in cls.password_list:
             if password.email == name:
                 return Password
 
 #  loops through all the saved password and checks if any matches the emails
 @classmethod
-def password_exist(classes,name):
+def password_exist(cls,name):
         
-        for password in classes.password_list:
+        for password in cls.password_list:
             if password.email == name:
                     return True
 
