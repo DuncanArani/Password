@@ -47,64 +47,67 @@ while True:
 
         short_code = input().lower()
 
-        if short_code == 'cc':
+        if short_code == 'cp':
                 print("New Password")
                 print("-"*10)
 
-                print ("First name ....")
+                print ("First name ")
                 f_name = input()
 
-                print("Last name ...")
+                print("Last name")
                 l_name = input()
 
-                print("email ...")
+                print("email")
                 p_number = input()
 
                 print("password ...")
                 e_address = input()
 
 
-                save_contacts(create_password(first_name,last_name,email,password)) 
+                save_password(create_password(first_name,last_name,email,password)) 
                 print ('\n')
                 print(f"New Password {first_name} {last_name} {email} created")
                 print ('\n')
 
         elif short_code == 'dp':
 
-            if display_passwords():
-                print("Here is a list of all your passwords")
-                print('\n')
-            
-        for password in display_passwords():
-                print(f"{password.first_name} {password.last_name}{password.email}")
-                print('\n')
+                if display_passwords():
+                    print("Here is a list of all your passwords")
+                    print('\n')
                 
-        else:
-                print('\n')
-                print("You dont seem to have any passwords saved yet")
-                print('\n')
+            for password in display_passwords():
+                    print(f"{password.first_name} {password.last_name}{password.email}")
+                    print('\n')
+                    
+            else:
+                    print('\n')
+                    print("You dont seem to have any passwords saved yet")
+                    print('\n')
 
-                             
+                                
         elif short_code == 'fp':
 
                 print("Enter the number you want to search for")
 
-        search_number = input()
-        if check_existing_contacts(search_number):
-                search_contact = find_password(search_name)
-                print(f"{search_password.first_name} {search_password.last_name}")
-                print('-' * 20)
+                
+            search_number = input()
 
-                print(f"email{search_password.email}")
-                print(f"password{search_password.password}")
-        else:
-                print("That password does not exist")
+            if check_existing_password(search_number):
+
+                    search_password = find_password(search_name)
+                    print(f"{search_password.first_name} {search_password.last_name}")
+                    print('-' * 20)
+
+                    print(f"email{search_password.email}")
+                    print(f"password{search_password.password}")
+            else:
+                    print("That password does not exist")
 
         elif short_code == "ex":
-                print("thank you")
-                break
-        else:
-                print("I really didn't get that. Please use the short codes")
+                    print("thank you")
+                    break
+            else:
+                    print("I really didn't get that. Please use the short codes")
 
 
     
