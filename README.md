@@ -1,5 +1,6 @@
 # PASSWORD-LOCKER
 #### passwordlocker is updated version, 24/08/2018
+ITS A SIMPLE OFFLINE APLICATION
 #### By **Duncan Arani**
 ## Description
 
@@ -19,7 +20,7 @@ Make sure you have python3 installed then run this command in terminal :
 $ pip install pyperclip configparser pycrypto getpass hashlib
 
 ## Known Bugs
-The application allows and indivifual to store their password for the different accounts
+The application allows and indivitual to store their password for the different accounts
 ## Technologies Used
 
 python

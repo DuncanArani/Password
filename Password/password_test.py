@@ -81,11 +81,11 @@ def password_exist(classes,name):
         return False  
 
 @classmethod
-def display_password(class):
+def display_password(clas):
         '''
         method that returns the contact list
         '''
-        return class.password_list
+        return clas.password_list
 
 @classmethod
 def copy_email(clas,name):
